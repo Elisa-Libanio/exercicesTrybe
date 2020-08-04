@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body id="body">
+    <script>
+        window.onload = function() {
+
+            let body = document.querySelector("body");
+            let headingColor = document.querySelector("h1")
+            let paragraphs = document.querySelectorAll("p");
+
+
+            document.body.style.backgroundColor = localStorage.getItem("bgColor");
+
+            let blue = document.querySelector(".blue");
+            let red = document.querySelector(".red");
+
+
+            blue.addEventListener("click", setBackground2);
+            red.addEventListener("click", setBackground);
+
+
+            function setBackground2() {
+                document.body.style.backgroundColor = blue.className;
+                localStorage.setItem("bgColor", blue.className)
+            }
+
+            function setBackground() {
+                document.body.style.backgroundColor = red.className;
+                localStorage.setItem("bgColor", red.className)
+            }
+
+
+        }
+
+
+        Comic.addEventListener("click", FontFamily("Comic"));
+        arial.addEventListener("click", FontFamily("arial"));
+        SansSerif.addEventListener("click", FontFamily("SansSerif"));
+
+        function FontFamily(font) {
+            if (font === "arial") {
+                console.log(font);
+                document.body.style.fontFamily = font;
+                // localStorage.setItem("arial", font)
+
+            } else if (font === "Comic") {
+                document.body.style.fontFamily = font;
+                // localStorage.setItem("comic", font)
+            } else {
+
+                document.body.style.fontFamily = font;
+                // localStorage.setItem("Sansserif", font)
+            }
+        }
+    </script>
+    <style>
+        .blue {
+            background-color: blue;
+        }
+        
+        .red {
+            background-color: red;
+        }
+        
+        .arial {
+            font-family: Arial;
+        }
+        
+        .sansSerif {
+            font-family: sans-serif;
+        }
+        
+        .Comic {
+            font-family: "Courier New";
+        }
+    </style>
+
+    <button class="blue">Blue</button>
+    <button class="red">Red</button>
+
+
+    <button class="arial">ARIAL</button>
+    <button class="sansSerif">Sans Serif</button>
+    <button class="Comic">Comic-Sans</button>
+
+    <h1> Titulo</h1>
+
+    <p>jwhuiewrybwq </p>
+    <p>Contrary to popular belief, Lorem Ipsum is not simply random text.</p>
+    <p> It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked
+    </p>
+    <p> up one of the more obscure Latin word</p>
+    <p>Contrary to popular belief, Lorem Ipsum is not simply random text.
+        <p>It has roots in a piece of classical Latin literature from up one of the more obscure Latin wor</p>
+        <p>ahahahahahhhejejejejejejejejjejejejejejjejeje</p>
+
+        <p> </p>
+        </section>]
+</body>
+
+</html>

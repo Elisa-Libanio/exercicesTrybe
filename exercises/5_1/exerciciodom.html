@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width" />
+    <title>Exercício 5.1</title>
+
+    <style>
+        div {
+            border-color: black;
+            border-style: solid;
+        }
+        
+        .title {
+            text-align: center;
+        }
+        
+        .main-content {
+            background-color: yellow;
+        }
+        
+        .main-content .center-content {
+            background-color: red;
+            width: 50%;
+            margin: 0 auto;
+        }
+        
+        .main-content .center-content p {
+            font-style: italic;
+        }
+    </style>
+
+</head>
+
+<body>
+
+    <h1 class="title">Exercício 5.1 - JavaEscripito </h1>
+    <div class="main-content">
+        <div class="center-content">
+            <p>Texto padrão do nosso site</p>
+            <p>-----</p>
+            <p>Trybe</p>
+        </div>
+    </div>
+    <script>
+        //1
+
+        function changeText() {
+            let mudaTexto = document.getElementsByTagName("p")[1];
+            mudaTexto.innerHTML = "Elisa Estudante Trybe formada e empregada";
+        }
+
+        changeText();
+        //Crie uma função que mude a cor do quadrado amarelo para o verde da Trybe.
+        //2
+        function ChangeYellowToGreen() {
+            let yellowGreen = document.getElementsByClassName("main-content")[0];
+            yellowGreen.style.background = "rgb(76,164,109)";
+
+
+        }
+        ChangeYellowToGreen();
+
+
+        // //Crie uma função que mude a cor do quadrado vermelho para branco.
+        //3
+        function changeRedtoWhite() {
+            let redWhite = document.getElementsByClassName("center-content")[0];
+            redWhite.style.background = "rgb(255,255,255)";
+
+        }
+
+        changeRedtoWhite();
+
+        //4
+        function h1text() {
+
+
+
+            let h1textclass = document.getElementsByClassName("h1")[0]
+
+
+            h1textclass.innerHTML = "Exercício 5.1 - JavaScript";
+
+        }
+        h1text();
+
+        //5
+
+        function modifiedTextparagraf() {
+            let modifiedp = document.getElementsByTagName("p");
+
+            for (let q = 0; q < modifiedp.length; q++) {
+
+                modifiedp[q].style.textTransform = "uppercase";
+
+            }
+
+
+
+
+        }
+        modifiedTextparagraf();
+
+
+
+        function showContentTags() {
+
+            let showP = document.getElementsByTagName("p");
+            for (let q = 0; q < modifiedp.length; q++) {
+
+                console.log(showP[q.innerHTML]);
+
+            }
+
+
+        }
+
+        showContentTags();
+
+
+        /exercício 06
+
+        let aux4 = document.createElement('div');
+        aux4.className = 'right-content';
+        document.querySelector(".main-content").appendChild(aux4);
+
+        //exercício 07
+
+        let aux5 = document.createElement('img');
+        aux5.className = 'small-image';
+        aux5.src = 'https://picsum.photos/200';
+        document.querySelector('.left-content').appendChild(aux5);
+
+        //exercício 08
+
+        let aux6 = document.createElement('ul');
+        document.querySelector('.right-content').appendChild(aux6);
+        let array = ['um', 'dois', 'três', 'quatro', 'cinco']
+        for (let i in array) {
+            let elementLi = document.createElement('li');
+            elementLi.innerHTML = array[i];
+            aux6.appendChild(elementLi);
+        }
+
+        //exercício 09
+        for (let i = 0; i < 3; i += 1) {
+            let elementH3 = document.createElement('h3');
+            document.querySelector(".main-content").appendChild(elementH3);
+        }
+    </script>
+</body>
+
+</html>

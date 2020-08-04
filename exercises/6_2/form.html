@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário Curriculo</title>
+    <link rel="stylesheet" type="text/css" href="bulma.min.css" />
+    <script type="text/javascript" src="js/bootstrap.js">
+    </script>
+</head>
+
+<body>
+
+
+    <form action="" method="GET">
+        <form name="myform" id="myform" method="POST">
+            <fieldset>
+
+                <header>
+                    <h1>Curriculum Vitae</h1>
+                </header>
+                <div class="field">
+                    <label for="fname">Nome:</label><br>
+                    <div class="control">
+
+                        <input type="text" id="fname" name="fname" required="required" maxlength="40"><br>
+                    </div>
+                </div>
+
+                <div class="field">
+                    <label for="email">Enter your email:</label><br>
+
+                    <div class=control>
+                        <input type="email" id="email" name="email" maxlength="50" placeholder="Digite seu email"><br>
+
+                    </div>
+                </div>
+
+                <div class="field">
+
+                    <label for="fname">CPF:</label><br>
+                    <div class=control>
+                        <input type="text" id="fname" name="fname" required="required" maxlength="11"><br>
+
+                    </div>
+                </div>
+                <div class="field">
+
+                    <label for="fname">Endereço:</label><br>
+                    <div class=control>
+                        <input type="text" id="fname" name="fname" required="required" maxlength="200"><br>
+                    </div>
+                </div>
+                <div class="field">
+                    <label for="fname">Cidade:</label><br>
+
+                    <div class=control>
+                        <input type="text" id="fname" name="fname" required="required" maxlength="28"><br>
+
+                    </div>
+                </div>
+                <div class="field">
+                    <label for="Estados">Estados</label>
+                    <select name="Estados" id="state">
+      </select>
+
+                </div>
+                <div class="field">
+
+
+                    <div class=control>
+                        <input type="radio" id="house" name="house" required="true" value="house">
+                    </div>
+                    <label for="house">Casa</label><br>
+
+                    <input type="radio" id="Apto" name="Apto" required="true" value="Apto">
+                    <label for="Apto">Apartamento</label><br>
+
+                </div>
+                <div class="field">
+
+                    <label class="label" for="Curriculo">Resumo do Curriculo:</label>
+
+                    <textarea required="required" id="Curriculo" name="Curriculo" rows="5" cols="33" maxlength="1000">
+</textarea>
+                </div>
+
+                <div class="field">
+
+                    <label for="Cargo">Cargo:</label>
+                    <input type="text" name="Cargo" size="40" id="cargo" />
+                </div>
+
+
+
+
+                <div class="field">
+
+                    <label>Descrição do Cargo</label>
+                    <textarea maxlength="500" required="required" id="textareaDesc.cargo"></textarea>
+
+                </div>
+                <div class="field">
+
+                    <label>Data de início</label>
+                    <input id="date" type="text" value="date" id="date" required="required">
+
+                </div>
+
+                <div class="field" class="btn">
+
+                    <button class="button" id="buttonCurriculo">Enviar</button>
+
+                </div>
+
+
+            </fieldset>
+        </form>
+
+
+
+
+
+
+
+        <script src="./script.js "></script>
+</body>
+
+</html>
